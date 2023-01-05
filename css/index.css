@@ -1,0 +1,1153 @@
+@font-face {
+  font-family: "HanaMin";
+  src: URL("./../fonts/HanaMin.ttf") format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
+
+/* Scale */
+:root {
+  --rate: calc((100vw - 1440px) / (2560 - 1440));
+}
+
+.navbar {
+  background-color: #fff;
+  z-index: 999;
+}
+
+.navbar-brand {
+  font-family: "HanaMin";
+  font-weight: bold;
+  font-size: 18pt;
+  margin-left: 75px;
+  color: rgb(111, 53, 40);
+}
+
+.navbar-nav {
+  font-size: 13pt;
+  margin-left: 185px;
+  margin-right: 160px;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding-top: 12px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-item .nav-link::after {
+  position: absolute;
+  bottom: -2px;
+  content: " ";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.nav-item:hover .nav-link::after,
+.nav-item .nav-link.active::after {
+  width: 100%;
+}
+
+/* #endregion */
+
+/* #region 服務項目 */
+.service-items {
+  margin-top: 0;
+}
+
+/* #region Banner */
+
+.banner {
+  position: relative;
+}
+
+.banner .banner-img {
+  width: 100%;
+}
+
+.banner .banner-slogan {
+  position: absolute;
+  left: calc(324px + 241 * var(--rate));
+  top: calc(67px + 53 * var(--rate));
+  height: calc(475px + 375 * var(--rate));
+}
+
+/* #endregion */
+
+/* #region 介紹 */
+.intro {
+  overflow: hidden;
+  position: relative;
+  margin-left: calc(182px + 141 * var(--rate));
+  margin-top: calc(5px + 128 * var(--rate));
+  margin-bottom: calc(157px + 113 * var(--rate));
+  height: calc(612px + 380 * var(--rate));
+}
+
+.intro .title {
+  font-family: "HanaMin";
+  position: relative;
+  text-align: left;
+  padding-top: calc(117px - 25 * var(--rate));
+  font-size: calc(30pt + 24 * var(--rate));
+  letter-spacing: calc(10px + 10 * var(--rate));
+}
+
+.intro .title::after {
+  position: absolute;
+  content: " ";
+  display: block;
+  background-color: rgb(104, 49, 37);
+  left: 0;
+  bottom: calc(-13px - 13 * var(--rate));
+  width: calc(20px + 15 * var(--rate));
+  height: calc(1px + 1 * var(--rate));
+}
+
+.intro .sub-title {
+  font-weight: bold;
+  margin-bottom: 35px;
+  margin-top: calc(63px + 53 * var(--rate));
+  letter-spacing: calc(10px + 8 * var(--rate));
+  font-size: calc(30pt + 26 * var(--rate));
+}
+
+.intro .content {
+  font-weight: bold;
+  letter-spacing: calc(0.15px + 0.7 * var(--rate));
+  margin-top: calc(69px + 54 * var(--rate));
+  font-size: calc(12pt + 12 * var(--rate));
+  line-height: calc(37px + 28 * var(--rate));
+  width: calc(363px + 280 * var(--rate));
+}
+
+.intro .service-image {
+  position: absolute;
+  right: calc(245px + 187 * var(--rate));
+  top: calc(102px - 34 * var(--rate));
+  height: calc(524px + 413 * var(--rate));
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region 作品精選 */
+.work {
+  margin-bottom: calc(84px + 83 * var(--rate));
+}
+
+.work .row {
+  margin-top: calc(38.5px + 54 * var(--rate));
+  margin-left: calc(223px + 199 * var(--rate));
+  margin-right: calc(223px + 199 * var(--rate));
+}
+
+.work .row .col-4 {
+  padding: 20px;
+  text-align: center;
+}
+
+.work .row .col-4 img {
+  width: 100%;
+}
+
+.work .ig-icon img {
+  height: calc(69px + 51 * var(--rate));
+  margin-right: 10px;
+}
+
+/* #endregion */
+
+/* #region 收費標準 */
+.charge {
+  font-weight: bold;
+  margin-bottom: calc(220px + 185 * var(--rate));
+}
+
+.charge .content {
+  width: calc(243px + 187 * var(--rate));
+  margin-top: calc(85px + 75 * var(--rate));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(5px + 15 * var(--rate));
+}
+
+.charge .w-100 {
+  font-size: calc(15pt + 12 * var(--rate));
+}
+
+.charge .w-100 small {
+  font-size: .7em;
+}
+
+.charge .mt-charge {
+  margin-top: calc(18px + 6 * var(--rate));
+}
+
+.charge .mt-discount {
+  letter-spacing: calc(1pt + 3 * var(--rate));
+  margin-top: calc(14px + 11 * var(--rate));
+}
+
+.charge .mt-tip {
+  letter-spacing: calc(3pt + 2 * var(--rate));
+  margin-top: 30px;
+}
+
+.charge .content>div:last-child {
+  margin-top: 150px;
+}
+
+/* #endregion */
+
+/* #region 文章選輯 */
+.article {
+  margin-bottom: calc(280px + 220 * var(--rate));
+}
+
+.article .content {
+  margin-top: calc(105px + 85 * var(--rate));
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.article .card {
+  margin-left: 8%;
+  margin-right: 8%;
+  border: none;
+}
+
+.article .card-img-top {
+  border-radius: 0;
+}
+
+.article .card-title {
+  padding-bottom: 18px;
+  font-size: calc(30pt + 0 * var(--rate));
+  font-weight: bold;
+  position: relative;
+}
+
+.article .card-title::after {
+  content: " ";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(104, 49, 37);
+}
+
+.article .card-body {
+  height: calc(245px + 206 * var(--rate));
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.article .card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  margin-top: 15px;
+  font-size: calc(21pt + 0 * var(--rate));
+}
+
+.article .content>div:last-child {
+  margin-top: calc(165px - 0 * var(--rate));
+}
+
+.article .ig-icon img {
+  height: calc(68px + 53 * var(--rate));
+  margin-right: calc(16px + 15 * var(--rate));
+}
+
+/* #endregion */
+
+/* #region 服務地點 */
+.location {
+  margin-bottom: calc(80px + 55 * var(--rate));
+}
+
+.location .map-img {
+  position: relative;
+  overflow-x: hidden;
+  height: calc(305px + 230 * var(--rate));
+}
+
+.location .map-img img {
+  height: calc(305px + 230 * var(--rate));
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+
+.location .content {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.location .content .detail {
+  width: 48.5%;
+  padding-left: calc(23.5px + 34 * var(--rate));
+}
+
+.location .title {
+  position: relative;
+  text-align: left;
+  padding-top: calc(77px + 64 * var(--rate));
+  font-size: calc(29pt + 22 * var(--rate));
+  letter-spacing: calc(12px + 10 * var(--rate));
+}
+
+.location .title::after {
+  position: absolute;
+  content: " ";
+  display: block;
+  height: 3px;
+  left: -8px;
+  width: calc(20px + 17 * var(--rate));
+  bottom: calc(-12px - 14 * var(--rate));
+}
+
+.location .name {
+  margin-top: calc(44px + 34 * var(--rate));
+  letter-spacing: calc(4px + 7 * var(--rate));
+  font-size: calc(15pt + 15 * var(--rate));
+}
+
+.location .name span {
+  padding-left: 20px;
+  letter-spacing: 10px;
+  font-size: 17pt;
+  font-weight: bold;
+}
+
+.location .address {
+  margin-top: 31px;
+  letter-spacing: 4.2px;
+  font-size: 23pt;
+}
+
+.location .address p {
+  margin-bottom: 0;
+}
+
+.location .address p span {
+  padding-left: 10px;
+}
+
+.location .contact-title {
+  margin-top: 26px;
+  font-size: 26pt;
+  font-weight: 1000;
+  letter-spacing: 2px;
+}
+
+.location .contact-info {
+  color: rgb(104, 49, 37);
+  font-weight: 1000;
+  margin-top: calc(11px + 8 * var(--rate));
+  font-size: calc(12pt + 12 * var(--rate));
+  letter-spacing: calc(1.5px + 1.5 * var(--rate));
+}
+
+.location .contact-info p {
+  margin-bottom: 0;
+}
+
+.location .google-map {
+  width: 50%;
+  padding-top: calc(75px + 65 * var(--rate));
+}
+
+
+.location .google-map iframe {
+  height: calc(305px + 240 * var(--rate));
+  width: calc(530px + 410 * var(--rate));
+}
+
+.flex-location {
+  display: flex;
+}
+
+/* #endregion */
+
+/* #region 頁尾 */
+.footer {
+  position: relative;
+  overflow-x: hidden;
+  height: calc(340px + 270 * var(--rate));
+}
+
+.footer .footer-img {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  height: 100%;
+}
+
+.footer .footer-title {
+  position: absolute;
+  top: calc(74px + 63 * var(--rate));
+  left: -9999px;
+  right: calc(-10033px - 28 * var(--rate));
+  margin: auto;
+  height: calc(65px + 50 * var(--rate));
+}
+
+.footer .footer-slogan {
+  position: absolute;
+  top: calc(140px + 114 * var(--rate));
+  left: calc(-10009px - 12 * var(--rate));
+  right: -9999px;
+  margin: auto;
+  height: calc(115px + 87 * var(--rate));
+}
+
+.footer .footer-instagram {
+  position: absolute;
+  top: calc(267px + 173 * var(--rate));
+  left: -9999px;
+  right: calc(-10029px - 20* var(--rate));
+  margin: auto;
+  height: calc(30px + 22 * var(--rate));
+}
+
+/* #endregion */
+
+/* #region 通用 */
+.title {
+  padding-top: 130px;
+  position: relative;
+  font-size: calc(28pt + 22 * var(--rate));
+  font-weight: bold;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+.title::after {
+  content: " ";
+  position: absolute;
+  background-color: rgb(104, 49, 37);
+  left: calc(50% - 25px);
+  width: 38px;
+  height: 3px;
+  bottom: -33px;
+}
+
+.clear-both {
+  clear: both;
+}
+
+/* #endregion */
+
+@media screen and (max-width: 1440px) {
+  :root {
+    --rate: calc((100vw - 1024px) / (1440 - 1024));
+  }
+
+  /* #region 服務項目 */
+
+  /* #region Banner */
+  .banner .banner-slogan {
+    left: calc(227px + 97 * var(--rate));
+    top: calc(45px + 23 * var(--rate));
+    height: calc(340px + 135 * var(--rate));
+  }
+  /* #endregion */
+
+  /* #region 介紹 */
+  .intro {
+    margin-top: calc(5px + 5 * var(--rate));
+    margin-left: calc(130px + 52 * var(--rate));
+    margin-bottom: calc(78px + 79 * var(--rate));
+    height: calc(450px + 162 * var(--rate));
+  }
+
+  .intro .title {
+    padding-top: calc(91px + 26 * var(--rate));
+    font-size: calc(19pt + 11 * var(--rate));
+    letter-spacing: 10px;
+  }
+
+  .intro .title::after {
+    bottom: -13px;
+    width: 20px;
+    height: 1px;
+  }
+
+  .intro .sub-title {
+    margin-top: calc(47px + 16 * var(--rate));
+    letter-spacing: calc(8px + 2 * var(--rate));
+    font-size: calc(20pt + 10 * var(--rate));
+  }
+
+  .intro .content {
+    letter-spacing: calc(0px + 0.15 * var(--rate));
+    margin-top: calc(50px + 19 * var(--rate));
+    font-size: calc(9pt + 3 * var(--rate));
+    line-height: calc(27px + 10 * var(--rate));
+    width: calc(270px + 93 * var(--rate));
+  }
+
+  .intro .service-image {
+    right: calc(170px + 75 * var(--rate));
+    top: calc(72px + 30 * var(--rate));
+    height: calc(375px + 149 * var(--rate));
+  }
+  /* #endregion */
+
+  /* #endregion */
+
+  /* #region 作品精選 */
+  .work {
+    margin-bottom: calc(30px + 54 * var(--rate));
+  }
+
+  .work .row {
+    margin-top: calc(24.5px + 14 * var(--rate));
+    margin-left: calc(150px + 73 * var(--rate));
+    margin-right: calc(150px + 73 * var(--rate));
+  }
+
+  .work .ig-icon img {
+    height: calc(50px + 19 * var(--rate));
+  }
+  
+  /* #endregion */
+
+  /* #region 收費標準 */
+  .charge {
+    margin-bottom: calc(105px + 108 * var(--rate));
+  }
+
+  .charge .content {
+    width: calc(172px + 71 * var(--rate));
+    margin-top: calc(65px + 20 * var(--rate));
+    padding-right: 5px;
+  }
+
+  .charge .w-100 {
+    font-size: calc(10pt + 5 * var(--rate));
+  }
+
+  .charge .mt-charge {
+    margin-top: calc(8px + 10 * var(--rate));
+  }
+
+  .charge .mt-discount {
+    letter-spacing: 1pt;
+    margin-top: 14px;
+  }
+
+  .charge .mt-tip {
+    letter-spacing: 3pt;
+    margin-top: 1rem;
+  }
+
+  .charge .content>div:last-child {
+    margin-top: calc(0px + 84 * var(--rate));
+  }
+
+  /* #endregion */
+
+  /* #region 文章選輯 */
+  .article {
+    margin-bottom: calc(200px + 80 * var(--rate));
+  }
+
+  .article .content {
+    margin-top: calc(75px + 30 * var(--rate));
+  }
+
+  .article .card-title {
+    font-size: 1.25rem;
+  }
+
+  .article .card-body {
+    height: 245px;
+  }
+
+  .article .card-text {
+    font-size: 1rem;
+  }
+
+  .article .content>div:last-child {
+    margin-top: calc(0.5rem + 102 * var(--rate));
+  }
+
+  .article .ig-icon img {
+    height: calc(48px + 20 * var(--rate));
+    margin-right: calc(13px + 3 * var(--rate));
+  }
+
+  /* #endregion */
+
+  /* #region 服務地點 */
+  .location {
+    margin-bottom: calc(50px + 30 * var(--rate));
+  }
+
+  .location .map-img {
+    height: calc(220px + 85 * var(--rate));
+  }
+
+  .location .map-img img {
+    height: calc(220px + 85 * var(--rate));
+  }
+
+  .location .content {
+    margin-left: 188px;
+  }
+
+  .location .content .detail {
+    padding-left: 23.5px;
+  }
+
+  .location .title {
+    padding-top: calc(50px + 27 * var(--rate));
+    font-size: calc(18pt + 11 * var(--rate));
+    letter-spacing: calc(9px + 3 * var(--rate));
+  }
+
+  .location .title::after {
+    bottom: -12px;
+    width: 20px;
+  }
+
+  .location .name {
+    margin-top: calc(30px + 14 * var(--rate));
+    letter-spacing: calc(2px + 5 * var(--rate));
+    font-size: calc(12pt + 3 * var(--rate));
+  }
+
+  .location .name span {
+    padding-left: calc(7px + 5 * var(--rate));
+    font-size: calc(9pt - 1 * var(--rate));
+    letter-spacing: calc(2px + 3 * var(--rate));
+  }
+
+  .location .address {
+    margin-top: calc(10px + 7 * var(--rate));
+    letter-spacing: calc(1px + 2.4 * var(--rate));
+    font-size: calc(12px + 4 * var(--rate));
+  }
+
+  .location .contact-title {
+    margin-top: calc(13px + 7 * var(--rate));
+    font-size: calc(11pt + 4 * var(--rate));
+    letter-spacing: 2px;
+  }
+
+  .location .contact-info {
+    margin-top: calc(4px + 7 * var(--rate));
+    font-size: calc(10pt + 2 * var(--rate));
+    letter-spacing: calc(0px + 1.5 * var(--rate));
+  }
+
+  .location .google-map {
+    padding-top: calc(50px + 25 * var(--rate));
+  }
+
+  .location .google-map iframe {
+    height: calc(220px + 85 * var(--rate));
+    width: 530px;
+  }
+
+  /* #endregion */
+
+  /* #region 頁尾 */
+  .footer {
+    height: calc(245px + 95 * var(--rate));
+  }
+
+  .footer .footer-title {
+    top: calc(50px + 24 * var(--rate));
+    height: calc(50px + 15 * var(--rate));
+    right: calc(-10023px - 10 * var(--rate));
+  }
+
+  .footer .footer-slogan {
+    top: calc(100px + 40 * var(--rate));
+    left: calc(-10005px - 4 * var(--rate));
+    height: calc(81px + 34 * var(--rate));
+  }
+
+  .footer .footer-instagram {
+    top: calc(190px + 77 * var(--rate));
+    right: calc(-10020px - 9 * var(--rate));
+    height: calc(21px + 9 * var(--rate));
+  }
+
+  /* #endregion */
+
+  /* #region 通用 */
+  .title {
+    padding-top: 82px;
+    font-size: calc(20pt + 8 * var(--rate));
+    letter-spacing: calc(7px + 3 * var(--rate));
+  }
+
+  .title::after {
+    width: calc(15px + 4 * var(--rate));
+    height: 2px;
+    bottom: calc(-12px - 4 * var(--rate));
+    left: calc(50% - calc(10px + 15 * var(--rate)));
+  }
+  /* #endregion */
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --rate: calc((100vw - 768px) / (1024 - 768));
+  }
+
+  /* #region Navigation */
+  .navbar-brand {
+    margin-left: 15px;
+  }
+
+  .navbar-nav {
+    margin-right: 0;
+  }
+  /* #endregion */
+
+  /* #region 服務項目 */
+
+  /* #region Banner */
+  .banner .banner-slogan {
+    left: calc(200px + 27 * var(--rate));
+    top: calc(75px - 30 * var(--rate));
+    height: calc(232px + 108 * var(--rate));
+  }
+
+  /* #endregion */
+
+  /* #region 介紹 */
+  .intro {
+    margin-top: 0;
+    margin-left: calc(98px + 32 * var(--rate));
+    margin-bottom: calc(36px + 42 * var(--rate));
+    height: calc(340px + 110 * var(--rate));
+  }
+
+  .intro .title {
+    padding-top: calc(70px + 21 * var(--rate));
+    font-size: calc(13pt + 6 * var(--rate));
+    letter-spacing: calc(7px + 3 * var(--rate));
+  }
+
+  .intro .title::after {
+    bottom: calc(-9px - 4 * var(--rate));
+    width: calc(14px + 6 * var(--rate));
+    height: calc(2px - 1 * var(--rate));
+  }
+
+  .intro .sub-title {
+    margin-top: calc(35px + 13 * var(--rate));
+    letter-spacing: calc(4px + 4 * var(--rate));
+    font-size: calc(15pt + 5 * var(--rate));
+  }
+
+  .intro .content {
+    letter-spacing: 0;
+    font-size: 9pt;
+    margin-top: calc(35px + 15 * var(--rate));
+    line-height: calc(21px + 6 * var(--rate));
+    width: calc(195px + 75 * var(--rate));
+  }
+
+  .intro .service-image {
+    right: calc(128px + 42 * var(--rate));
+    top: calc(60px + 12 * var(--rate));
+    height: calc(280px + 95 * var(--rate));
+  }
+
+  /* #endregion */
+
+  /* #endregion */
+
+  /* #region 作品精選 */
+  .work {
+    margin-bottom: calc(0px + 30 * var(--rate));
+  }
+
+  .work .row {
+    margin-top: calc(13.5px + 11 * var(--rate));
+    margin-left: calc(110px + 40 * var(--rate));
+    margin-right: calc(110px + 40 * var(--rate));
+  }
+
+  .work .row .col-4 {
+    padding: calc(15px + 5 * var(--rate));
+  }
+
+  .work .ig-icon img {
+    height: 50px;
+  }
+
+  /* #endregion */
+
+  /* #region 收費標準 */
+  .charge {
+    margin-bottom: calc(25px + 80 * var(--rate));
+  }
+
+  .charge .content {
+    width: 172px;
+    margin-top: calc(45px + 20 * var(--rate));
+  }
+
+  .charge .w-100 {
+    font-size: 10pt;
+  }
+
+  .charge .mt-charge {
+    margin-top: 8px;
+  }
+
+  .charge .content>div:last-child {
+    margin-top: 3.8rem;
+  }
+
+  /* #endregion */
+
+  /* #region 文章選輯 */
+  .article {
+    margin-bottom: 200px;
+  }
+
+  .article .content {
+    margin-top: calc(55px + 20 * var(--rate));
+  }
+
+  .article .content>div:last-child {
+    margin-top: 0.5rem;
+  }
+
+  .article .ig-icon img {
+    height: 48px;
+    margin-right: 13px;
+  }
+
+  /* #endregion */
+
+  /* #region 服務地點 */
+  .location {
+    margin-bottom: 50px;
+  }
+
+  .location .map-img {
+    height: 220px;
+  }
+
+  .location .map-img img {
+    height: 220px;
+  }
+
+  .location .content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .location .content .detail {
+    padding-left: 3%;
+  }
+
+  .location .title {
+    padding-top: 50px;
+    font-size: 18pt;
+    letter-spacing: 9px;
+  }
+
+  .location .name {
+    margin-top: 30px;
+    letter-spacing: 2px;
+    font-size: 12pt;
+  }
+
+  .location .name span {
+    padding-left: 7px;
+    font-size: 9pt;
+    letter-spacing: 2px;
+  }
+
+  .location .address {
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+
+  .location .contact-title {
+    margin-top: 13px;
+    font-size: 11pt;
+  }
+
+  .location .contact-info {
+    margin-top: 4px;
+    letter-spacing: 0;
+    font-size: 10pt;
+  }
+
+  .location .google-map {
+    padding-top: 50px;
+  }
+
+  .location .google-map iframe {
+    height: 220px;
+    width: 530px;
+  }
+
+  /* #endregion */
+
+  /* #region 頁尾 */
+  .footer {
+    height: 245px;
+  }
+
+  .footer .footer-title {
+    top: 50px;
+    height: 50px;
+    right: -10023px;
+  }
+
+  .footer .footer-slogan {
+    top: 100px;
+    left: -10005px;
+    height: 81px;
+  }
+
+  .footer .footer-instagram {
+    top: 190px;
+    right: -10020px;
+    height: 21px;
+  }
+  /* #endregion */
+  
+  /* #region 通用 */
+  .title {
+    padding-top: calc(78px + 4 * var(--rate));
+    font-size: calc(14pt + 6 * var(--rate));
+    letter-spacing: 7px;
+  }
+
+  .title::after {
+    width: 15px;
+    bottom: calc(-10px - 2 * var(--rate));
+    left: calc(50% - 10px);
+  }
+
+  /* #endregion */
+}
+
+
+@media screen and (max-width: 768px) {
+  :root {
+    --rate: calc((100vw - 425px) / (768 - 425));
+  }
+
+  .nav-item .nav-link::after {
+    content: none;
+  }
+
+  .banner .banner-slogan {
+    left: calc(75px + 125 * var(--rate));
+    top: calc(25px + 50 * var(--rate));
+    height: calc(175px + 57 * var(--rate));
+  }
+
+  .intro .title {
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 26pt;
+  }
+
+  .intro {
+    height: 800px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .intro .title::after {
+    width: 19px;
+    height: 2px;
+    left: calc(50% - 12px);
+    bottom: -8.5px;
+  }
+
+  .intro .sub-title {
+    text-align: center;
+    font-size: 20pt;
+  }
+
+  .intro .service-image {
+    width: 100%;
+    position: initial;
+    height: auto;
+    margin-left: auto;
+    padding-right: 13%;
+    padding-left: 13%;
+  }
+
+  .intro .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 13pt;
+    margin-top: 35px;
+    margin-bottom: 100px;
+  }
+
+  .flex-location {
+    display: block;
+  }
+
+
+  .work {
+    margin-bottom: 100px;
+  }
+
+  .charge {
+    margin-bottom: 150px;
+  }
+
+  .article .card-title {
+    font-size: 1rem;
+  }
+
+  .article .content>div:last-child {
+    margin-top: 2rem;
+  }
+
+
+  .location .title,
+  .location .name,
+  .location .address,
+  .location .contact-title,
+  .location .contact-info {
+    text-align: center;
+  }
+
+  .location .title::after {
+    width: 19px;
+    height: 2px;
+    left: calc(50% - 12px);
+    bottom: -8.5px;
+  }
+
+  .location .content {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .location .content .detail {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .location .google-map {
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer {
+    height:  calc(200px + 45 * var(--rate));
+  }
+
+  .footer .footer-title {
+    top: calc(30px + 20 * var(--rate));
+    right: calc(-10015px - 8 * var(--rate));
+  }
+
+  .footer .footer-slogan {
+    top: calc(80px + 20 * var(--rate));
+    height: calc(80px + 1 * var(--rate));
+  }
+
+  .footer .footer-instagram {
+    top: calc(170px + 30 * var(--rate));
+    right: -9999px;
+    height: 24px;
+  }
+
+  .title {
+    font-size: 24pt;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  .banner .banner-slogan {
+    left: 75px;
+    top: 25px;
+    height: 175px;
+  }
+
+  .intro {
+    height: 700px;
+  }
+
+  .intro .content {
+    line-height: 30px;
+  }
+
+  .work .row {
+    margin-top: 30px;
+  }
+
+  .work .ig-icon img {
+    margin-right: 0;
+    height: 35px;
+  }
+
+  .article {
+    margin-bottom: 125px;
+  }
+
+  .article .content>div:last-child {
+    margin-top: 0;
+  }
+
+  .col-12 {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    height: 200px;
+  }
+
+  .footer .footer-title {
+    top: 30px;
+    height: 50px;
+    right: -10015px;
+  }
+
+  .footer .footer-slogan {
+    top: 80px;
+    height: 80px;
+  }
+
+  .footer .footer-instagram {
+    top: 170px;
+    right: -9999px;
+  }
+}
